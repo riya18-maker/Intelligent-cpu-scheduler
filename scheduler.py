@@ -1,4 +1,4 @@
-# CPU Scheduling Simulator (Simple Version)
+# CPU Scheduling Simulator 
 
 # Input
 def gantt_fcfs(p):
