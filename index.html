@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intelligent CPU Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🧠 Intelligent CPU Scheduler</h1>
+
+    <div class="card">
+        <h3>Add Process</h3>
+        <input id="arrival" placeholder="Arrival Time" type="number">
+        <input id="burst" placeholder="Burst Time" type="number">
+        <input id="priority" placeholder="Priority" type="number">
+        <button onclick="addProcess()">Add</button>
+    </div>
+
+    <div class="card">
+        <h3>Algorithm</h3>
+        <select id="algo">
+            <option value="fcfs">FCFS</option>
+            <option value="sjf">SJF</option>
+            <option value="priority">Priority</option>
+            <option value="rr">Round Robin</option>
+        </select>
+
+        <input id="quantum" placeholder="Time Quantum" type="number">
+        <button onclick="run()">Run</button>
+    </div>
+
+    <div class="card">
+        <h3>Process Table</h3>
+        <table id="table">
+            <tr><th>P</th><th>AT</th><th>BT</th><th>PR</th></tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h3>Gantt Chart</h3>
+        <div id="gantt"></div>
+        <div id="timeline"></div>
+    </div>
+
+    <div class="card">
+        <h3>Results</h3>
+        <p id="output"></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
